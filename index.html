@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="picolo d-flex justify-content-center align-items-center" style="height: calc(100vh - 110px);">
+        <div class="card br-2 sum-link login-scale polo" style="background: linear-gradient(to right, #c9d6ff, #e2e2e2); width:60%;">
+            <div class="card-content" style="">
+                <div class="p-3 border-bottom">
+                    <h6 class="mb-0 font-weight-bold">Change Password</h6>
+                </div>
+                <form>
+                    <div class="row m-0 p-3 d-flex justify-content-center">
+    
+                        <!-- <div class="col-lg-6">
+                            <img class="w-100" style="transform: scaleX(-1);border-radius:8px;" src="~/app-assets/img/gallery/changepassword.jpg" />
+                        </div> -->
+                        <div class="col-lg-6">
+                            <div class="tab-pane" id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
+    
+                                <div class="form-group">
+                                    <label for="old-password" style="text-transform: capitalize;">Old Password <span class="danger mb-2">*</span></label>
+                                    <div class="controls">
+                                        <input type="password" id="old-password" class="form-control" placeholder="Old Password" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-password" style="text-transform: capitalize;">New Password <span class="danger mb-2">*</span></label>
+                                    <div class="controls">
+                                        <input type="password" id="new-password" class="form-control" placeholder="New Password" required>
+                                        <span id="passwordError1" style="color: red; display: none;">Password must be 8 characters Long</span>
+                                        <span id="passwordError2" style="color: red; display: none;">Password must be at least 8 characters long and include a combination of letters, numbers, and special characters</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="retype-new-password" style="text-transform: capitalize;">Re-type New Password <span class="danger mb-2">*</span></label>
+                                    <div class="controls">
+                                        <input type="password" id="retype-new-password" class="form-control" placeholder="Re-type New Password"
+                                               required>
+                                        <span id="passwordError" style="color: red; display: none;">Passwords do not match</span>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="d-flex flex-sm-row flex-column justify-content-end py-2 pe-4 border-top">
+                        <button asp-controller="Admin" asp-action="ChangePassword" class="btn btn-secondary mr-sm-2 mx-2">Cancel</button>
+                        <a id="myButtonSave" class="btn btn-primary mr-3 mx-2" disabled="true">Save Changes</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
